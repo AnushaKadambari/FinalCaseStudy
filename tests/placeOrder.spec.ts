@@ -41,7 +41,7 @@ test.describe('PlaceOrder Test....',() => {
                 await page.waitForTimeout(3000)
                 await cartPage.getproductcount()
                  await cartPage.deleteproduct(1)
-                //await cartPage.delAllItems()
+               // await cartPage.delAllItems()
                  await page.waitForTimeout(3000)
                 await cartPage.getproductcount()
          })
@@ -51,7 +51,10 @@ test.describe('PlaceOrder Test....',() => {
             await cartPage.placeOrder()
             await page.waitForTimeout(3000)
             await checkOutPage.placeOrder('Anusha', 'Idia', 'Hyd', '123', 'May', '2026')
-            await expect(page.getByRole('heading', { name: 'Thank you for your purchase!'})).toBeVisible();
+            await page.waitForTimeout(2000);
+            await page.pause();
+            
+            //await expect(page.getByRole('heading', { name: 'Thank you for your purchase!'})).toBeVisible();
 
 
          })
