@@ -55,23 +55,6 @@ test.describe('PlaceOrder Test....',() => {
 
 
          })
-         //await listPage.addItemToCart(products[0].name)
-        //  await listPage.addItemToCart(products[1].name)
-       //await homePage.selectProduct(products[0].name)
-        //c
-       // await homePage.selectProduct(products[1].name)
-         //await listPage.addItemToCart()
-
+         
 })
 
-
-// test('test', async ({ page }) => {
-//   await page.goto('https://practicesoftwaretesting.com/');
-//   await page.locator('[data-test="nav-sign-in"]').click();
-//   await page.locator('[data-test="email"]').click();
-//   await page.locator('[data-test="email"]').fill('anoosha.ece23@gmail.com');
-//   await page.locator('[data-test="email"]').press('Tab');
-//   await page.locator('[data-test="password"]').fill('Anusha@417');
-//   await page.locator('[data-test="login-submit"]').click();
-//   await page.locator('[data-test="nav-menu"]').click()
-// })
